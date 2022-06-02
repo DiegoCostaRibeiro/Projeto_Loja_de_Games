@@ -1,0 +1,16 @@
+﻿@model Cliente
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar</h1>
+
+<form asp-action="Cadastrar">
+    <partial name="_Form"/>
+
+    <div class="my-3">
+        <input type="submit" value="Cadastrar" class="btn btn-success"/>
+        <a asp-action="Listar" class="btn btn-primary">Clientes Cadastrados</a>
+    </div>
+
+</form>

@@ -1,0 +1,12 @@
+﻿@model Venda
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<form asp-action="Editar">
+    <input type="Hidden" asp-for="VendaId"/>
+    <partial name="_Form"/>
+    <input type="Submit" value="Salvar modificações" class="btn btn-success">
+</form>

@@ -1,0 +1,23 @@
+@model Jogo
+
+    <div class="mb-3">
+        <label asp-for="Nome">Nome</label>
+        <input asp-for="Nome" class="form-control" placeholder="Insira o nome do jogo. ex: Forza Horizon 5"/>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Genero">Gênero</label>
+        <select asp-for="Genero" asp-items="@Html.GetEnumSelectList<Genero>()" class="form-control">
+            <option>Selecione</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Preco"></label>
+        <input asp-for="Preco" class="form-control"/>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="EUsado"></label>
+        <input asp-for="EUsado"/>
+    </div>

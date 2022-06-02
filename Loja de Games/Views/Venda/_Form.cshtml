@@ -1,0 +1,20 @@
+@model Venda
+
+    <div class="mb-3">
+        <label asp-for="ClienteId">Cliente</label>
+        <select asp-for="ClienteId" asp-items="@(new SelectList(ViewBag.Clientes,"ClienteId","Nome"))" class="form-control">
+            <option>Selecione</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="JogoId">Jogo</label>
+        <select asp-for="JogoId" asp-items="@(new SelectList(ViewBag.Jogos,"JogoId","Nome"))" class="form-control">
+            <option>Selecione</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Data"></label>
+        <input asp-for="Data" class="form-control"/>
+    </div>
